@@ -1,0 +1,43 @@
+// 共通パーツのCSS
+
+.cmn-section {
+  &.-black {
+    background-color: cl(black);
+  }
+}
+
+.cmn-title {
+  text-align: center;
+  .main {
+  color: cl(white);
+    font-size: 32px;
+  }
+  .sub {
+    display: block;
+    color: cl(white);
+    font-size: 20px;
+    @include TimesNewRoman;
+    margin-top: 50px;
+    // 頭文字大文字
+    text-transform: capitalize;
+    &.-faq {
+        // FAQだけ全て大文字にする
+      text-transform: uppercase;
+    }
+  }
+}
+
+.cmn-link {
+  a {
+    color: cl(white);
+    background: cl(gold);
+    // ↓display: block;と同じ効果がある
+    display: flex;
+    width: 155px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}

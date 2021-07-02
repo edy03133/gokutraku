@@ -1,0 +1,45 @@
+.blog {
+  padding-top: 80px;
+  .blog-cont {
+margin-left: 70px;
+margin-right: 70px;
+  }
+  .blog-list {
+    margin-top: 60px;
+    .row {
+      display: flex;
+      + .row {
+        margin-top: 30px;
+      }
+    }
+    dt {
+      color: cl(white);
+      font-size: 14px;
+      background-color: cl(primary);
+      width: 157px;
+      height: 30px;
+      // テキスト中央よせ
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    dd {
+      // 横幅を固定する
+      flex: 1;
+      a {
+        color: cl(white);
+        font-size: 24px;
+        text-decoration: underline;
+      }
+    }
+  }
+  .blog-link {
+    margin-top: 50px;
+    a {
+      // 中央よせ
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
