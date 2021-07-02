@@ -1,0 +1,36 @@
+.faq {
+  // 上とのセクションはば
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .faq-cont {
+    // 左右の余白。.faq-list内の指定とともに、RP対応になる。
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+  }
+  .faq-list {
+    // 最大でも900px
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .faq-item {
+    > a {
+      background-color: cl(white);
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid #F5F5F5;
+      .title {
+
+      }
+    }
+    .detail {
+  background-color: cl(lightgrey);
+  padding: 25px 50px;
+  border-bottom: 1px solid  #F5F5F5;
+    }
+  }
+
+}

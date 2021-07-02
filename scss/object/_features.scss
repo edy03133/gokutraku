@@ -1,0 +1,59 @@
+.features {
+  padding-top: 80px;
+  .inner {
+
+  }
+  .features-cont {
+    padding-top: 60px;
+
+  }
+  .features-list {
+
+  }
+  .features-item {
+    display: flex;
+    color: cl(white);
+    &:nth-child(odd){
+     flex-flow: row-reverse;
+     .image {
+       margin-right: 40px;
+     }
+     .text {
+       margin-right: 40px;
+     }
+    }
+    &:nth-child(even){
+      .image {
+        margin-left: 40px;
+      }
+      .text {
+        margin-left: 40px;
+      }
+    }
+    .text {
+      padding-top: 40px;
+      // 片方をwidth指定した時、残り幅を自動で合わせてくれる↓
+      flex: 1;
+    }
+    .title {
+      color: cl(baige);
+      font-size: 28px;
+      }
+    .desc {
+      font-size: 18px;
+      margin-top: 50px;
+      }
+      .image {
+        width: percentage(640 / 1280);
+      }
+    
+  }
+  .features-link {
+    padding-top: 60px;
+    a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+}

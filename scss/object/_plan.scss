@@ -1,0 +1,88 @@
+.plan {
+  padding-top: 80px;
+  .inner {
+
+  }
+}
+
+.rec {
+  padding-top: 60px;
+  .rec-slick {
+
+  }
+  .rec-item {
+      display: flex;
+      flex-flow: column-reverse;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-left: 10px;
+      margin-right: 10px;
+    .text {
+      background-color: cl(white);
+      padding: 25px 25px  50px 25px;
+    }
+    .title {
+      color: cl(text);
+    }
+    .price {
+      color: cl(text);
+      padding-top: 60px;
+
+      > span {
+        color: cl(red);
+      }
+    }
+    .image {
+
+    }
+  }
+}
+
+.service {
+ 
+  .service-wrap {
+    padding-top: 100px;
+
+  }
+  .service-list {
+
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+
+  }
+  .service-item {
+    background-color: cl(lightgrey);
+    display: flex;
+    // 文字と画像の上下順番入れ替え
+    flex-flow: column-reverse;
+    // 全体1280pxに対して１つのアイテムが390px
+    width: percentage(390 / 1200);
+    // 「+」・・・２番目以降の要素に指定
+    + .service-item {
+      margin-left: 20px;
+    }
+    .text {
+      font-size: 18px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 50px;
+    } 
+    .title {
+      font-size: 28px;
+      text-align: center;
+    }
+    .desc {
+      padding-top: 40px;
+
+    }
+    .image {
+      width: 160px;
+      // 中央よせ
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}
+
